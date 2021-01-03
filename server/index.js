@@ -23,6 +23,10 @@ if (!config.get("jwtPrivateKey")) {
    console.error("FATAL ERROR !!, jwtPrivateKey is not defined");
    process.exit(1);
 }
+
+if (process.env.NODE_ENV == "production") {
+   app.use(express.static("client/build"));
+}
 // app.use(function (req, res, next) {
 //    res.header("Access-Control-Allow-Origin", "http://localhost:6900");
 //    res.header(
