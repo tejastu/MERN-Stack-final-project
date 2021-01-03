@@ -24,9 +24,7 @@ if (!config.get("jwtPrivateKey")) {
    process.exit(1);
 }
 
-if (process.env.NODE_ENV == "production") {
-   app.use(express.static("client/build"));
-}
+
 // app.use(function (req, res, next) {
 //    res.header("Access-Control-Allow-Origin", "http://localhost:6900");
 //    res.header(
@@ -48,6 +46,14 @@ app.use("/api/", product);
 app.use("/api", contact);
 app.use("/api", mailer);
 app.use("/api", forgotpassword);
-// app.use("/api", mailer);
+
+
+if (process.env.NODE_ENV == "production") {
+   app.use(express.static("client/build"));
+
+   app.get("*", (req, res) => {
+      res.sendFile(path.resolve(_dirname, "client", "build", "index.html"));
+   });
+}
 
 app.listen(port, () => console.log(`Your port is Running on ${port}`));
