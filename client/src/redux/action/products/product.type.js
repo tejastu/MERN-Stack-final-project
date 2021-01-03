@@ -1,0 +1,9 @@
+export const FETCH_PRODUCT_DATA = "FETCH_PRODUCT_DATA";
+export const FETCH_PRODUCT_DATA_ID  = "FETCH_PRODUCT_DATA_ID";
+export const LOADING = "LOADING";
+export const SHOW_ERROR = "SHOW_ERROR";
+export const ADD_CART = "ADD_CART";
+export const REMOVE_CART = "REMOVE_CART";
+export const ADD_QUANTITY = "ADD_QUANTITY";
+export const REMOVE_QUANTITY = "REMOVE_QUANTITY";
+export const NAVIGATE_CART = "NAVIGATE_CART";

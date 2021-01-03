@@ -1,0 +1,98 @@
+.loader {
+   border: 16px solid #f3f3f3;
+   border-radius: 50%;
+   border-top: 16px solid blue;
+   border-right: 16px solid green;
+   border-bottom: 16px solid red;
+   width: 100px;
+   height: 100px;
+   margin-left: 50%;
+   margin-top: 10%;
+   -webkit-animation: spin 0.5s linear infinite;
+   animation: spin 1s linear infinite;
+}
+
+@-webkit-keyframes spin {
+   0% {
+      -webkit-transform: rotate(0deg);
+   }
+   100% {
+      -webkit-transform: rotate(360deg);
+   }
+}
+
+@keyframes spin {
+   0% {
+      transform: rotate(0deg);
+   }
+   100% {
+      transform: rotate(360deg);
+   }
+}
+
+.cart-page {
+   margin: 80px;
+   width: 80%;
+}
+table {
+   width: 100%;
+   border-collapse: collapse;
+}
+.cart-info {
+   display: flex;
+   flex-wrap: wrap;
+}
+th {
+   text-align: left;
+   padding: 9px;
+   color: #fff;
+   background: #3937b4;
+   font-weight: bold;
+   font-size: large;
+}
+
+td {
+   padding: 18px 5px;
+}
+td input {
+   width: 40px;
+   height: 30px;
+   padding: 5px;
+}
+td a {
+   color: #fafafa;
+   font-size: 12px;
+}
+.flex {
+   display: flex;
+}
+.buttons {
+   float: right;
+}
+
+td img {
+   width: 80px;
+   height: 80px;
+   margin-right: 10px;
+}
+.total-price {
+   display: flex;
+   justify-content: flex-end;
+}
+.total-price table {
+   border-top: 3px solid #ff523b;
+   width: 100%;
+   max-width: 400px;
+}
+td:last-child {
+   text-align: right;
+}
+th:last-child {
+   text-align: right;
+}
+
+@media only screen and (max-width: 600px) {
+   .cart-info p {
+      display: none;
+   }
+}

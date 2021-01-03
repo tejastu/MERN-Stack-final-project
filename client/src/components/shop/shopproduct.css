@@ -1,0 +1,58 @@
+.loader {
+   border: 16px solid #f3f3f3;
+   border-radius: 50%;
+   border-top: 16px solid blue;
+   border-right: 16px solid green;
+   border-bottom: 16px solid red;
+   width: 100px;
+   height: 100px;
+   margin-left: 50%;
+   margin-top: 10%;
+   -webkit-animation: spin 0.5s linear infinite;
+   animation: spin 1s linear infinite;
+}
+
+@-webkit-keyframes spin {
+   0% {
+      -webkit-transform: rotate(0deg);
+   }
+   100% {
+      -webkit-transform: rotate(360deg);
+   }
+}
+
+@keyframes spin {
+   0% {
+      transform: rotate(0deg);
+   }
+   100% {
+      transform: rotate(360deg);
+   }
+}
+.body {
+   margin-top: 100px;
+}
+
+.newarrival {
+   background: green;
+   width: 50px;
+   color: white;
+   font-size: 12px;
+   font-weight: bold;
+}
+.col-md-7 {
+   float: left;
+}
+.col-md-7 h2 {
+   color: rgb(0, 0, 0);
+}
+.col-md-7 img {
+   width: 20%;
+}
+
+.col-md-7 .offerPrice h3 {
+   color: #fe980f;
+   font-size: 26px;
+   font-weight: bold;
+   padding-top: 20px;
+}
