@@ -23,7 +23,7 @@ router.post("/nodemailer", async (req, res) => {
 
       auth: {
          user: "webkitchen100@gmail.com", // generated ethereal user
-         pass: "nahidenar45", // generated ethereal password
+         pass: "*********", // generated ethereal password // enter your password
       },
       tls: { rejectUnauthorized: false },
       debug: true,
